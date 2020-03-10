@@ -5,8 +5,10 @@ plugins:
     "@semantic-release/changelog",
     [
       "@semantic-release/exec",
-      { "prepareCmd": "poetry version ${nextRelease.version}" },
-      { "publishCmd": "poetry build" },
+      {
+        "prepareCmd": "poetry version ${nextRelease.version}",
+        "publishCmd": "poetry build",
+      },
     ],
     ["@semantic-release/github", { "assets": [{ "path": "./dist/**" }] }],
     [
