@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/FlippAre/testing-gh-actions/compare/v1.0.0...v1.0.1) (2020-03-10)
+
+
+### Bug Fixes
+
+* includes artifacts ([45e4090](https://github.com/FlippAre/testing-gh-actions/commit/45e4090d173907d35dc56485425a137820f25272))
+
 # 1.0.0 (2020-03-10)
 
 
