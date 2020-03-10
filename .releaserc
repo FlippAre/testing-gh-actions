@@ -5,7 +5,7 @@ plugins:
     "@semantic-release/changelog",
     [
       "@semantic-release/exec",
-      { "prepare": "poetry version ${nextRelease.version}" },
+      { "prepareCmd": "poetry version ${nextRelease.version}" },
     ],
     [
       "@semantic-release/github",
