@@ -9,15 +9,7 @@ plugins:
     ],
     [
       "@semantic-release/github",
-      {
-        "assets":
-          [
-            {
-              "path": "./dist/lime_install-${nextRelease.version}-py3-none-any.whl",
-              "label": "Wheel",
-            },
-          ],
-      },
+      { "assets": [{ "path": "./dist/**", "label": "Wheel" }] },
     ],
     [
       "@semantic-release/git",
