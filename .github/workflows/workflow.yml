@@ -46,6 +46,10 @@ jobs:
         uses: actions/setup-python@v1
         with:
           python-version: 3.7
+      - uses: dschep/install-poetry-action@v1.3
+      - name: Build
+        run: |
+          poetry build
       - name: Semantic Release
         id: semantic
         uses: cycjimmy/semantic-release-action@v2
@@ -55,19 +59,8 @@ jobs:
             @semantic-release/commit-analyzer
             @semantic-release/release-notes-generator
             @semantic-release/changelog
-          dry_run: True
+            @semantic-release/exec
+            @semantic-release/github
+            @semantic-release/git
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - uses: dschep/install-poetry-action@v1.3
-      - name: Bump version
-        if: steps.semantic.outputs.new_release_published == 'true'
-        run: |
-          poetry version ${{ steps.semantic.outputs.new_release_version }}
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4.1.0
-        with:
-          commit_message: "chore: version bumped to ${{ steps.semantic.outputs.new_release_version }}"
-      - name: Build
-        run: |
-          poetry build

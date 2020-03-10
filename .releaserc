@@ -3,4 +3,27 @@ plugins:
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
+    [
+      "@semantic-release/exec",
+      { "prepare": "poetry version ${nextRelease.version}" },
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "assets":
+          [
+            {
+              "path": "./dist/lime_install-${nextRelease.version}-py3-none-any.whl",
+              "label": "Wheel",
+            },
+          ],
+      },
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": ["CHANGELOG.md", "pyproject.toml"],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
+      },
+    ],
   ]
