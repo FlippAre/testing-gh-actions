@@ -1,3 +1,11 @@
+## [1.0.3](https://github.com/FlippAre/testing-gh-actions/compare/v1.0.2...v1.0.3) (2020-03-10)
+
+
+### Bug Fixes
+
+* better build ([79f8976](https://github.com/FlippAre/testing-gh-actions/commit/79f8976a60517dbe88009c6d4484171de99e1824))
+* error ([01d146c](https://github.com/FlippAre/testing-gh-actions/commit/01d146cac9f4bded2e8fff43e0968bcfd46f50fc))
+
 ## [1.0.2](https://github.com/FlippAre/testing-gh-actions/compare/v1.0.1...v1.0.2) (2020-03-10)
 
 
