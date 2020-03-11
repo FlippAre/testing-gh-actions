@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/FlippAre/testing-gh-actions/compare/v1.0.3...v1.0.4) (2020-03-11)
+
+
+### Bug Fixes
+
+* tries with if ([9e38ccf](https://github.com/FlippAre/testing-gh-actions/commit/9e38ccf0612110a70ceba1e3b652afeb6a49cf1b))
+
 ## [1.0.3](https://github.com/FlippAre/testing-gh-actions/compare/v1.0.2...v1.0.3) (2020-03-10)
 
 

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "lime-install"
-version = "1.0.3"
+version = "1.0.4"
 description = ""
 authors = ["Filip Arenbo <filip@arenbo.org>"]
 
