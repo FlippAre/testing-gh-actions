@@ -12,7 +12,6 @@ on:
 jobs:
   echo:
     runs-on: [ubuntu-latest]
-    needs: [test]
     steps:
       - name: echo
         run: echo ${{github.event}}
