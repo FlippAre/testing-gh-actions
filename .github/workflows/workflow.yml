@@ -10,6 +10,12 @@ on:
     branches: [master]
 
 jobs:
+  echo:
+    runs-on: [ubuntu-latest]
+    needs: [test]
+    steps:
+      - name: echo
+        run: echo ${{github.event}}
   test:
     runs-on: ${{ matrix.os }}
     strategy:
