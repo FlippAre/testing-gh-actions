@@ -1,3 +1,11 @@
+## [1.0.6](https://github.com/FlippAre/testing-gh-actions/compare/v1.0.5...v1.0.6) (2020-03-12)
+
+
+### Bug Fixes
+
+* spelling ([3a3089c](https://github.com/FlippAre/testing-gh-actions/commit/3a3089c29b2600e8ed6176097cd7bb81b205e34d))
+* try using fancy extends ([392285a](https://github.com/FlippAre/testing-gh-actions/commit/392285a1a74bae3dd39e956e4be39721babfa15f))
+
 ## [1.0.5](https://github.com/FlippAre/testing-gh-actions/compare/v1.0.4...v1.0.5) (2020-03-12)
 
 
