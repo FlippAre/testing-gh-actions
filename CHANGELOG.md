@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/FlippAre/testing-gh-actions/compare/v1.0.4...v1.0.5) (2020-03-12)
+
+
+### Bug Fixes
+
+* changed semantic release provider ([5813df6](https://github.com/FlippAre/testing-gh-actions/commit/5813df6e33b73f4b3faf74b411f4d7de690c0d9d))
+
 ## [1.0.4](https://github.com/FlippAre/testing-gh-actions/compare/v1.0.3...v1.0.4) (2020-03-11)
 
 
