@@ -55,7 +55,7 @@ jobs:
       - uses: dschep/install-poetry-action@v1.3
       - name: Semantic Release
         id: semantic
-        uses: cycjimmy/semantic-release-action@v2
+        uses: lundalogik/semantic-release-action@v2
         with:
           # You can specify specifying version range for the extra plugins if you prefer.
           extra_plugins: |
